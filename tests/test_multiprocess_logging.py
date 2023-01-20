@@ -9,7 +9,7 @@ Test cases for multiprocess logging.
 2018-Sep-04 = Created.
 
 ============ License ============
-Copyright (c) 2018 Michael Stanley
+Copyright (c) 2018, 2022 Michael Stanley
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License

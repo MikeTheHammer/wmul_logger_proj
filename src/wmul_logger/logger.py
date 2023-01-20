@@ -11,7 +11,7 @@ Logging wrapper.
               Moved logging from Utilities to here.
 
 ============ License ============
-Copyright (c) 2017 Michael Stanley
+Copyright (c) 2017, 2022 Michael Stanley
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
