@@ -4,6 +4,8 @@
 Logging wrapper.
 
 ============ Change Log ============
+2024-May-28 = Add errors="replace" to the file handler.
+
 2022-May-06 = Changed License from MIT to GPLv2.
 
 2017-Aug-18 = Created.
@@ -11,7 +13,7 @@ Logging wrapper.
               Moved logging from Utilities to here.
 
 ============ License ============
-Copyright (c) 2017, 2022 Michael Stanley
+Copyright (c) 2017, 2022, 2024 Michael Stanley
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -64,7 +66,8 @@ def setup_logger(file_name=None, log_level=logging.WARNING, log_name=__name__):
         file_handler = logging.handlers.RotatingFileHandler(
             filename=file_name,
             maxBytes=1_048_576,
-            backupCount=5
+            backupCount=5,
+            errors="replace"
         )
         file_handler.setFormatter(log_formatter)
         file_handler.setLevel(log_level)
